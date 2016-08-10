@@ -7,11 +7,9 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="index-logo">
-          <a class="main-page" href="#">
-            <img class="logo" src="#" alt="Логотип">
-          </a>
-        </div>
+        <a class="index-logo" href="#">
+          <img class="logo" src="#" alt="Логотип">
+        </a>
         <nav class="main-navigation">
           <ul class="main-menu">
             <li>
@@ -26,17 +24,9 @@
           </ul>
         </nav>
         <div class="user-block">
-          <ul>
-            <li>
-              <a class="search" href="#">Поиск</a>
-            </li>
-            <li>
-              <a class="search" href="#">Вход</a>
-            </li>
-            <li>
-              <a class="search" href="#">2 товара</a>
-            </li>
-          </ul>
+          <a class="search" href="#">Поиск</a>
+          <a class="enter" href="#">Вход</a>
+          <a class="cart full" href="#">2 товара</a>
         </div>
         <section class="header-contacts">
           <p class="header-contacts-worktime">с 10 до 20, ежедневно</p>
@@ -53,7 +43,7 @@
           <a href="#">Каталог</a> 
         </li>
         <li>
-          <p>Сливочное</p>  
+          Сливочное  
         </li>
       </ul>
       <h2>Сливочное мороженое</h2>
@@ -65,8 +55,13 @@
           </select>
         </fieldset>
         <fieldset>
-          <legend>Цена: 100 руб. - 500 руб.</legend>
-          <input id="test" type="range">
+          <legend>Цена: <span>100 руб.</span> - <span>500 руб.</span></legend>
+           <div class="range">
+             <div class="range-stripe"></div>
+             <div class="range-stripe-shaded"></div>
+             <div class="range-toggle first"></div>
+             <div class="range-toggle second"></div>
+           </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
@@ -106,9 +101,7 @@
       <section class="product-kind">
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное с апельсиновым джемом">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное с апельсиновым джемом">
             <div class="product-price">
               <span class="price">310 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -120,9 +113,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочно-кофейное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочно-кофейное">
             <div class="product-price">
               <span class="price">380 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -134,9 +125,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочно-клубничное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочно-клубничное">
             <div class="product-price">
               <span class="price">355 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -148,9 +137,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное крем-брюле">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное крем-брюле">
             <div class="product-price">
               <span class="price">415 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -162,9 +149,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное с брусничным джемом">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное с брусничным джемом">
             <div class="product-price">
               <span class="price">325 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -176,9 +161,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочно-черничное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочно-черничное">
             <div class="product-price">
               <span class="price">410 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -190,9 +173,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочно-лимонное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочно-лимонное">
             <div class="product-price">
               <span class="price">375 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -204,9 +185,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное шоколадное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное шоколадное">
             <div class="product-price">
               <span class="price">320 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -218,9 +197,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочно-ванильное">
-            </div>
+            <img class="product-image" src="#" alt="Сливочно-ванильное">
             <div class="product-price">
               <span class="price">440 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -232,9 +209,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное с ментоловым сиропом">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное с ментоловым сиропом">
             <div class="product-price">
               <span class="price">435 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -246,9 +221,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное с шоколадом">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное с шоколадом">
             <div class="product-price">
               <span class="price">355 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -260,9 +233,7 @@
         </article>
         <article class="product">
           <div class="product-main-info">
-            <div>
-              <img src="#" alt="Сливочное с мятным сиропом">
-            </div>
+            <img class="product-image" src="#" alt="Сливочное с мятным сиропом">
             <div class="product-price">
               <span class="price">420 &#8381;</span>
               <span class="price-per-kg">/кг</span>
@@ -291,16 +262,12 @@
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </section>
-        <table class="footer-about-us">
-          <tr>
-            <td style=""><a href="#">Для поставщиков</a></td>
-            <td style=""><a href="#">Наши документы</a></td>
-          </tr>
-          <tr>
-            <td><a href="#">О производстве</a></td>
-            <td><a href="#">Экологические стандарты</a></td>
-          </tr>
-        </table>
+        <section class="footer-about-us">
+          <a href="#">Для поставщиков</a>
+          <a href="#">Наши документы</a>
+          <a href="#">О производстве</a>
+          <a href="#">Экологические стандарты</a>
+        </section>
         <section class="footer-copyright">
           <img src="#" alt="Логотип HTML Academy">
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
