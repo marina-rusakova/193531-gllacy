@@ -1,0 +1,32 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	font-weight: normal;
+	font-family: "Roboto";
+}
+
+.slider-title  p {
+	font-size: 60px;
+	line-height: 60px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
