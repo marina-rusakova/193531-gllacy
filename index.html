@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container-header clearfix">
         <div class="index-logo">
-          <img class="logo" src="img/logo_shop.svg" width="154" height="64" alt="Логотип">
+          <img class="logo" src="img/icon_logo_shop.svg" width="154" height="64" alt="Логотип">
         </div>
         <nav class="main-navigation">
           <ul class="main-menu">
@@ -29,14 +29,14 @@
           <a class="enter" href="#">Вход</a>
           <a class="cart empty" href="#">Пусто</a>
         </div>
+      </div>
+    </header>
+    <main class="main-main">
+      <div class="container clearfix">
         <section class="header-contacts">
           <p class="header-contacts-worktime">с 10 до 20, ежедневно</p>
           <p class="header-contacts-phone">8 812 450-25-25</p>
         </section>
-      </div>
-    </header>
-    <main class="main-main">
-      <div class="container">
         <section class="slider-img">
           <div class="slider">
             <div class="slider-controls">
@@ -45,24 +45,24 @@
               <label for="btn-3"></label>
             </div>
             <div class="slider-inner">
-              <div class="slider-title">
-                <p>Крем-брюле и пломбир с малиновым джемом</p>
-              </div>
               <div class="slider-slides">
-                <img src="img/photo1.png" width="647" height="584" alt="Крем-брюле и пломбир">
+                <!-- <img src="img/photo1.png" width="647" height="584" alt="Крем-брюле и пломбир"> -->
                 <img src="#" alt="Шоколадное">
                 <img src="#" alt="Сливочное">
+              </div>
+              <div class="slider-title">
+                <p>Крем-брюле и пломбир с малиновым джемом</p>
               </div>
             </div>
             <input type="radio" id="btn-1" name="toggle" checked>
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
           </div>
-          <div>
+          <div class="slider-btn">
             <a href="#">Давайте оба!</a>
           </div>
         </section>
-        <section class="special-offer">
+        <section class="special-offer clearfix">
           <div class="information offer-raspberries">
             <h2 class="offer-title">Малинка даром!</h2>
             <p class="offer-describe">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -78,10 +78,10 @@
             </div>
           </div>
         </section>
-        <section class="products-hit">
+        <section class="products-hit clearfix">
           <article class="product">
             <div class="product-main-info">
-              <div>
+              <div class="hit">
                 <img src="img/hit.png" width="61" height="61" alt="хит">
               </div>
               <div>
@@ -98,7 +98,7 @@
           </article>
           <article class="product">
             <div class="product-main-info">
-              <div>
+              <div class="hit">
                 <img src="img/hit.png" width="61" height="61" alt="хит">
               </div>
               <div>
@@ -115,7 +115,7 @@
           </article>
           <article class="product">
             <div class="product-main-info">
-              <div>
+              <div class="hit">
                 <img src="img/hit.png" width="61" height="61" alt="хит">
               </div>
               <div>
@@ -132,7 +132,7 @@
           </article>
           <article class="product">
             <div class="product-main-info">
-              <div>
+              <div class="hit">
                 <img src="img/hit.png" width="61" height="61" alt="хит">
               </div>
               <div>
@@ -148,23 +148,23 @@
             </div>
           </article>
         </section>
-        <section class="features">
+        <section class="features clearfix">
           <h3>Магазин Глейси-это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
           <div class="features-description">
             <p class="features-item technology">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            <p class="features-item quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <p class="features-item ingredient">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+            <p class="features-item quality">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             <p class="features-item delivery">Доставка нашего мороженого до заказчиков осуществляетс в специальном термопаке, который не дает мороженому растаять в пути и позволяет сщхранить превосходный вкус.</p>
           </div>
         </section>
-        <section class="communication">
-          <div class="information blog">
+        <section class="communication clearfix">
+          <div class="information-blog">
             <p class="blog-new">Новое в нашем блоге</p>
             <div class="blog-news">
               <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
             </div>
           </div>
-          <div class="information email">
+          <div class="information-email">
             <p class="delivery-mail">Подпишись на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="#" method="post">
               <input type="text" name="email" placeholder="Электронная почта">
@@ -174,7 +174,7 @@
         </section>
       </div>
       <section class="map">
-        <div class="container">
+        <div class="container clearfix">
           <div class="map-contacts">
             <p class="map-contacts-addres">
             Адрес главного офиса и<br> 
@@ -187,15 +187,15 @@
             <span class="map-contacts-phone">8 812 450-25-25</span><br>
             (c 10 до 20 ежедневно)
             </p>
-          </div>
-          <div class="map-contacts-btn">
-            <a href="#">Форма обратной связи</a>
+            <div class="map-contacts-btn">
+              <a href="#">Форма обратной связи</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
