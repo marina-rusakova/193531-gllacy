@@ -21,12 +21,18 @@ body {
   clear: both;
 }
 
-.container-header {
+.main-header {
   opacity: 0.8;
-  width: 1151px;
+  width: 1200px;
   margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 22px;
+  background-color: #ae38d5;
+}
+
+.container {
+  opacity: 0.8;
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
   background-color: #eaec69;
 }
 
@@ -34,12 +40,8 @@ body {
   float: left;
   width: 154px;
   min-height: 74px;
-  margin-right: 15px;
+  margin-right: 20px;
   background-color: #9fa6b8;
-}
-
-.main-menu {
-  margin-top: 0px;
 }
 
 .main-navigation {
@@ -58,36 +60,28 @@ body {
 
 .user-block {
   float: right;
-  width: 267px;
+  width: 262px;
   min-height: 74px;
   background-color: #9fa6b8;
 }
 
-.header-contacts {
+.main-contacts {
   float: right;
   width: 170px;
   min-height: 40px;
   background-color: #9fa6b8;
 }
 
-.header-contacts-worktime {
+.main-contacts-worktime {
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
 }
 
-.header-contacts-phone {
+.main-contacts-phone {
   font-size: 22px;
   line-height: 24px;
   font-weight: bold;
-}
-
-.container {
-  opacity: 0.8;
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0 27px;
-  background-color: #eaec69;
 }
 
 .slider-img {
@@ -108,7 +102,22 @@ body {
   width: 700px;
   min-height: 120px;
   margin: 0 auto;
+  margin-top: 289px;
+  background-color: #9fa6b8;
+}
+
+.slider-title > p {
+  margin: 0;
+}
+
+.slider-inner {
   margin-bottom: 30px;
+}
+
+.slider-toggle {
+  float: left;
+  width: 100px;
+  min-height: 60px;
   background-color: #9fa6b8;
 }
 
@@ -126,18 +135,18 @@ body {
   background-color: #ae38d5;
 }
 
-.offer-raspberries {
-  float: left;
+.information {
   width: 560px;
   min-height: 229px;
   background-color: #9fa6b8;
 }
 
-.offer-chocolate {
+.offer-raspberries, .blog {
+  float: left;
+}
+
+.offer-chocolate, .email {
   float: right;
-  width: 560px;
-  min-height: 229px;
-  background-color: #9fa6b8;
 }
 
 .products-hit {
@@ -172,8 +181,7 @@ body {
 }
 
 .features-description {
-  width: 1106px;
-  margin: 0 auto;
+  padding: 0 20px;
   background-color: #9fa6b8;
 }
 
@@ -193,20 +201,6 @@ body {
 .communication {
   margin-bottom: 40px;
   background-color: #ae38d5;
-}
-
-.information-blog {
-  float: left;
-  width: 560px;
-  min-height: 220px; 
-  background-color: #9fa6b8;
-}
-
-.information-email {
-  float: right;
-  width: 560px;
-  min-height: 220px; 
-  background-color: #9fa6b8;
 }
 
 .map {
@@ -329,15 +323,13 @@ h2 {
 .pagination {
   min-height: 30px;
   margin-bottom: 30px;
-  background-color: #2a18de;
+  text-align: right;
+  background-color: #6cef32;
 }
 
-.pagination-page {
-  float: right;
-  width: 190px;
-  background-color: #9fa6b8;
+.pagination a {
+  display: inline-block;
 }
-
   
 .slider-title  p {
 	font-size: 60px;
