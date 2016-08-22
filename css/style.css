@@ -1,6 +1,6 @@
 body {
-	min-width: 1200px;
-  margin: 0;
+	width: 1200px;
+  margin: 0 auto;
   padding: 0;
 	font-size: 16px;
 	line-height: 22px;
@@ -23,15 +23,12 @@ body {
 
 .main-header {
   opacity: 0.8;
-  width: 1200px;
-  margin: 0 auto;
   background-color: #ae38d5;
 }
 
 .container {
   opacity: 0.8;
   width: 1146px;
-  margin: 0 auto;
   padding: 0 27px;
   background-color: #eaec69;
 }
@@ -65,6 +62,10 @@ body {
   background-color: #9fa6b8;
 }
 
+.index-contacts {
+  background-color: #45cd82;
+}
+
 .main-contacts {
   float: right;
   width: 170px;
@@ -86,7 +87,6 @@ body {
 
 .slider-img {
   min-height: 534px;
-  margin: 0 auto;
   margin-bottom: 40px;
   background-color: #ae38d5;
 }
@@ -136,21 +136,19 @@ body {
 }
 
 .information {
+  float: left;
   width: 560px;
   min-height: 229px;
+  margin-right: 26px;
   background-color: #9fa6b8;
 }
 
-.offer-raspberries, .blog {
-  float: left;
-}
-
-.offer-chocolate, .email {
-  float: right;
+.information:nth-child(2n) {
+  margin-right: 0px;
 }
 
 .products-hit {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   font-size: 0px;
   background-color: #ae38d5;
 }
@@ -167,6 +165,10 @@ body {
 
 .product:nth-child(4n) {
   margin-right: 0px;
+}
+
+.product {
+  margin-bottom: 35px;
 }
 
 .hit {
@@ -205,9 +207,7 @@ body {
 
 .map {
   opacity: 0.8;
-  width: 1200px;
   height: 370px;
-  margin: 0 auto;
   padding-top: 60px; 
   background-color: #ae38d5;
 }
@@ -222,10 +222,8 @@ body {
 
 .main-footer {
   opacity: 0.8;
-  width: 1200px;
   padding-top: 20px;
   padding-bottom: 25px;
-  margin: 0 auto;
   background-color: #2a18de;
 }
 
@@ -259,19 +257,15 @@ body {
   background-color: #9fa6b8;
 }
 
-h2 {
-  margin: 0px;
-} 
-
 .main-information {
   min-height: 80px;
   margin-bottom: 25px;
   background-color: #2a18de;
 } 
 
-.breadcrumbs {
+.main-pathway {
   float: left;
-  width: 900px;
+  width: 600px;
   font-size: 0px;
   padding-top: 22px;
   background-color: #9fa6b8;
@@ -308,27 +302,22 @@ h2 {
 .product-kind {
   min-height: 1086px;
   font-size: 0px;
-  margin-bottom: 80px; 
+  margin-bottom: 45px;
   background-color: #2a18de;
-}
-
-.product-kind .product {
-  margin-bottom: 35px;
-}
-
-.product-kind .product:nth-child(1n+9) {
-  margin-bottom: 0px;
 }
 
 .pagination {
   min-height: 30px;
   margin-bottom: 30px;
   text-align: right;
+  font-size: 0px;
   background-color: #6cef32;
 }
 
 .pagination a {
   display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
 }
   
 .slider-title  p {
@@ -339,12 +328,14 @@ h2 {
 
 
 h2 {
+  margin: 0px;
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;
 }
 
 h3 {
+  margin: 0px;
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
