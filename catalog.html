@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Глейси"</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -16,19 +16,19 @@
         <nav class="main-navigation">
           <ul class="main-menu">
             <li>
-              <a href="#">Каталог</a>
+              <a class="current" href="#">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
             </li>
             <li>
-              <a href="#">О компании</a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
         </nav>
-        <div class="user-block">
-          <a class="search" href="#"></a>
-          <a class="enter" href="#">Вход</a>
+        <div class="user-block catalog-user">
+          <a class="search catalog-search" href="#"></a>
+          <a class="enter catalog-enter" href="#">Вход</a>
           <a class="cart full" href="#">2 товара</a>
         </div>
       </div>
@@ -44,8 +44,14 @@
           <li>
             <a href="#">Главная</a> 
           </li>
+          <li class="breadcrumbs-arrow">
+            &#187
+          </li>
           <li>
             <a href="#">Каталог</a> 
+          </li>
+          <li class="breadcrumbs-arrow">
+            &#187 
           </li>
           <li>
             Сливочное  
@@ -58,14 +64,16 @@
         <div class="filter-criterion">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sorting">
-              <option value="popularity">По популярности</option>
-            </select>
+            <div class="filter-sorting">
+              <select name="sorting">
+                <option value="popularity">по популярности</option>
+              </select>
+            </div>
           </fieldset>
         </div>
         <div class="filter-criterion">
           <fieldset>
-          <legend>Цена: <span>100 руб.</span> - <span>500 руб.</span></legend>
+            <legend>Цена: <span>100 руб.</span> - <span>500 руб.</span></legend>
             <div class="range">
               <div class="range-stripe"></div>
               <div class="range-stripe-shaded"></div>
@@ -77,42 +85,37 @@
         <div class="filter-criterion">
           <fieldset>
             <legend>Жирность:</legend>
-            <label>
-              <input type="radio" name="percent-fat" value="0%">0%
-            </label>
-            <label>
-              <input type="radio" name="percent-fat" value="10%" checked>до 10%
-            </label>
-            <label>
-              <input type="radio" name="percent-fat" value="<30%">до 30%
-            </label>
-            <label>
-              <input type="radio" name="percent-fat" value=">30%">выше 30%
-            </label>
+            <div class="filter-fat">
+              <input id="fat0" type="radio" name="percent-fat" value="0%">
+              <label for="fat0">0%</label>
+              <input id="fat10" type="radio" name="percent-fat" value="10%" checked>
+              <label for="fat10">до 10%</label>
+              <input id="fat<30" type="radio" name="percent-fat" value="<30%">
+              <label for="fat<30">до 30%</label>
+              <input id="fat>30" type="radio" name="percent-fat" value=">30%">
+              <label for="fat>30">выше 30%</label>
+            </div>
           </fieldset>
         </div>
         <div class="filter-criterion">
           <fieldset>
             <legend>Наполнители:</legend>
-            <label>
-              <input type="checkbox" name="filler1" checked>шоколадные
-            </label>
-            <label>
-              <input type="checkbox" name="filler2" checked>сахарные присыпки
-            </label>
-            <label>
-              <input type="checkbox" name="filler3">фрукты
-            </label>
-            <label>
-              <input type="checkbox" name="filler4">сиропы
-            </label>
-            <label>
-              <input type="checkbox" name="filler5">джемы
-            </label>
+            <div class="filter-filler">
+              <input id="filler1" type="checkbox" name="filler1" checked>
+              <label for="filler1">шоколадные</label>
+              <input id="filler2" type="checkbox" name="filler2" checked>
+              <label for="filler2">сахарные присыпки</label>
+              <input id="filler3" type="checkbox" name="filler3">
+              <label for="filler3">фрукты</label>
+              <input id="filler4" type="checkbox" name="filler4">
+              <label for="filler4">сиропы</label>
+              <input id="filler5" type="checkbox" name="filler5">
+              <label for="filler5">джемы</label>
+            </div>
           </fieldset>
         </div>
         <div class="filter-criterion">
-          <button class="btn" type="submit">Применить</button>
+          <button class="filter-btn" type="submit">Применить</button>
         </div>
       </form>
       <section class="product-kind clearfix">
@@ -127,6 +130,9 @@
           <div class="product-title">
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -138,6 +144,9 @@
           </div>
           <div class="product-title">
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+          </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
         <article class="product">
@@ -151,6 +160,9 @@
           <div class="product-title">
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -163,6 +175,9 @@
           <div class="product-title">
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -173,7 +188,10 @@
             </div>
           </div>
           <div class="product-title">
-            <a href="#">Сливочное с брусничным джемом</a>
+            <a href="#">Сливочное с брусничным<br>джемом</a>
+          </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
         <article class="product">
@@ -187,6 +205,9 @@
           <div class="product-title">
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -198,6 +219,9 @@
           </div>
           <div class="product-title">
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
         <article class="product">
@@ -211,6 +235,9 @@
           <div class="product-title">
             <a href="#">Сливочное с шоколадной стружкой</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -221,7 +248,10 @@
             </div>
           </div>
           <div class="product-title">
-            <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a href="#">Сливочно-ванильное с<br>кусочками шоколада</a>
+          </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
         <article class="product">
@@ -235,6 +265,9 @@
           <div class="product-title">
             <a href="#">Сливочное с ментоловым сиропом</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
         <article class="product">
           <div class="product-main-info">
@@ -246,6 +279,9 @@
           </div>
           <div class="product-title">
             <a href="#">Сливочное с кусочками черного шоколада</a>
+          </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
           </div>
         </article>
         <article class="product">
@@ -259,34 +295,49 @@
           <div class="product-title">
             <a href="#">Сливочное с мятным сиропом</a>
           </div>
+          <div class="product-view">
+          <a class="btn product-btn" href="#">Быстрый просмотр</a>
+          </div>
         </article>
       </section>
       <section class="pagination">
-        <a href="#">&lsaquo;</a>
+        <a class="narrow-prev disabled" href="#"></a>
         <a class="page selected" href="#">1</a>
         <a class="page" href="#">2</a>
         <a class="page" href="#">3</a>
         <a class="page" href="#">4</a>
         <a class="page" href="#">5</a>
-        <a href="#">&rsaquo;</a>
+        <a class="narrow-next" href="#"></a>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <div class="social-btn">
+            <a class=" social-btn-tw" href="#">Твиттер</a>
+          </div>
+          <div class="social-btn">
+            <a class="social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="social-btn">
+            <a class="social-btn-fb" href="#">Фейсбук</a>
+          </div>
+          <div class="social-btn">
+            <a class="social-btn-vk" href="#">Вконтакте</a>
+          </div>
         </section>
         <section class="footer-about-us">
-          <a href="#">Для поставщиков</a>
-          <a href="#">Наши документы</a>
-          <a href="#">О производстве</a>
-          <a href="#">Экологические стандарты</a>
+          <div class="about-us-prod">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="about-us-doc">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
         </section>
         <section class="footer-copyright">
-          <img src="#" alt="Логотип HTML Academy">
+          <img src="img/logo-htmla.svg" width="108" height="38" alt="Логотип академии">
           <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>

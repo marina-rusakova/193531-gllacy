@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин "Глейси"</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -19,7 +19,7 @@
               <img class="logo" src="img/icon-logo-shop.svg" width="154" height="64" alt="Логотип">
             </div>
             <nav class="main-navigation">
-              <ul class="main-menu">
+              <ul>
                 <li>
                   <a href="#">Каталог</a>
                 </li>
@@ -82,11 +82,8 @@
               </div>
             </section>
             <section class="products-hit clearfix">
-              <article class="product">
+              <article class="product hit">
                 <div class="product-main-info">
-                  <div class="hit">
-                    <img src="img/hit.png" width="61" height="61" alt="хит">
-                  </div>
                   <div>
                     <img class="product-image" src="img/ice-cream1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
                   </div>
@@ -98,12 +95,12 @@
                 <div class="product-title">
                   <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
+                <div class="product-view">
+                  <a class="btn product-btn" href="#">Быстрый просмотр</a>
+                </div>
               </article>
-              <article class="product">
+              <article class="product hit">
                 <div class="product-main-info">
-                  <div class="hit">
-                    <img src="img/hit.png" width="61" height="61" alt="хит">
-                  </div>
                   <div>
                     <img class="product-image" src="img/ice-cream2.png" width="267" height="267" alt="Сливочно-кофейное">
                   </div>
@@ -115,12 +112,12 @@
                 <div class="product-title">
                   <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
+                <div class="product-view">
+                  <a class="btn product-btn" href="#">Быстрый просмотр</a>
+                </div>
               </article>
-              <article class="product">
+              <article class="product hit">
                 <div class="product-main-info">
-                  <div class="hit">
-                    <img src="img/hit.png" width="61" height="61" alt="хит">
-                  </div>
                   <div>
                     <img class="product-image" src="img/ice-cream3.png" width="267" height="267" alt="Сливочно-клубничное">
                   </div>
@@ -132,12 +129,12 @@
                 <div class="product-title">
                   <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
+                <div class="product-view">
+                  <a class="btn product-btn" href="#">Быстрый просмотр</a>
+                </div>
               </article>
-              <article class="product">
+              <article class="product hit">
                 <div class="product-main-info">
-                  <div class="hit">
-                    <img src="img/hit.png" width="61" height="61" alt="хит">
-                  </div>
                   <div>
                     <img class="product-image" src="img/ice-cream4.png" width="267" height="267" alt="Сливочное крем-брюле">
                   </div>
@@ -148,6 +145,9 @@
                 </div>
                 <div class="product-title">
                   <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                </div>
+                <div class="product-view">
+                  <a class="btn product-btn" href="#">Быстрый просмотр</a>
                 </div>
               </article>
             </section>
@@ -202,16 +202,28 @@
         <footer class="main-footer">
           <div class="container clearfix">
             <section class="footer-social">
-              <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <div class="social-btn">
+               <a class=" social-btn-tw" href="#">Твиттер</a>
+              </div>
+              <div class="social-btn">
+                <a class="social-btn-inst" href="#">Инстаграм</a>
+              </div>
+              <div class="social-btn">
+                <a class="social-btn-fb" href="#">Фейсбук</a>
+              </div>
+              <div class="social-btn">
+                <a class="social-btn-vk" href="#">Вконтакте</a>
+              </div>
             </section>
             <section class="footer-about-us">
-              <a href="#">Для поставщиков</a>
-              <a href="#">Наши документы</a>
-              <a href="#">О производстве</a>
-              <a href="#">Экологические стандарты</a>
+              <div class="about-us-prod">
+                <a href="#">Для поставщиков</a>
+                <a href="#">О производстве</a>
+              </div>
+              <div class="about-us-doc">
+                <a href="#">Наши документы</a>
+                <a href="#">Экологические стандарты</a>
+              </div>
             </section>
             <section class="footer-copyright">
               <img src="img/logo-htmla.svg" width="108" height="38" alt="Логотип академии">
