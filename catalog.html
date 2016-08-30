@@ -16,20 +16,84 @@
         <nav class="main-navigation">
           <ul class="main-menu">
             <li>
-              <a class="current" href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">О Компании</a>
-            </li>
-          </ul>
-        </nav>
+              <a class="main-menu-item current" href="#">Каталог</a>
+                <ul class="sub-menu">
+                  <li>
+                    <p>Новинки</p>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Сливочное</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Меролин</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="main-menu-item" href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a class="main-menu-item" href="#">О компании</a>
+              </li>
+            </ul>
+          </nav>
         <div class="user-block catalog-user">
-          <a class="search catalog-search" href="#"></a>
-          <a class="enter catalog-enter" href="#">Вход</a>
-          <a class="cart full" href="#">2 товара</a>
+          <div class="user-block-search">
+            <a class="search" href="#"></a>
+            <div class="form-search"> 
+              <form action="#" method="get">        
+                <input id="search" type="text" name="search" placeholder="Что ищем?" required>
+                <label for="search">Что ищем?</label>
+              </form> 
+            </div>
+          </div>
+          <div class="user-block-enter">
+            <a class="enter" href="#">Вход</a>
+          <div class="form-enter">
+            <form action="#" method="get">
+              <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
+              <label for="mail">Электронная почта</label>
+              <input id="password" type="text" name="password" placeholder="Пароль" required>
+              <label for="password">Пароль</label>
+              <a class="btn enter-btn" href="#">Войти</a>
+            </form>
+            <div class="enter-link">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div> 
+            </div>
+          </div>
+          <div class="user-block-cart">
+            <a class="cart full" href="#">2 товара</a>
+            <div class="form-cart">
+              <table  class="cart-item">
+                <tr style="height: 55px">
+                  <td style="width: 25px">&#10006;</td>
+                  <td style="width: 45px"><div class="cart-img1"></div></td>
+                  <td style="width: 255px"><p class="cart-item-title">Пломбир с апельсиновым джемом<p></td>
+                  <td style="width: 125px"><p>1.5 кг x <span>200 руб.</span><p></td>
+                  <td style="width: 70px">300 руб.</td>
+                </tr>
+                <tr style="height: 65px">
+                  <td class="row">&#10006;</td>
+                  <td class="row"><div class="cart-img2"></div></td>
+                  <td class="row"><p class="cart-item-title cart-title">Клубничный пломбир с присыпкой из белого шоколада<p></td>
+                  <td class="row">1.5 кг x <span>300 руб.</span></td>
+                  <td class="row">450 руб.</td>
+                </tr>
+              </table>
+              <div class="form-cart-total">
+                <p>Итого: 750 руб.</p>
+              </div>
+              <a class="btn cart-btn" href="#">Оформить заказ</a>
+            </div> 
+          </div>
         </div>
       </div>
     </header>
@@ -42,16 +106,10 @@
         <div class="main-pathway">
           <ul class="breadcrumbs">
           <li>
-            <a href="#">Главная</a> 
-          </li>
-          <li class="breadcrumbs-arrow">
-            &#187
+            <a class="breadcrumbs-item" href="#">Главная</a> 
           </li>
           <li>
-            <a href="#">Каталог</a> 
-          </li>
-          <li class="breadcrumbs-arrow">
-            &#187 
+            <a class="breadcrumbs-item" href="#">Каталог</a> 
           </li>
           <li>
             Сливочное  

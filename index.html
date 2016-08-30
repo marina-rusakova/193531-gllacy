@@ -19,21 +19,61 @@
               <img class="logo" src="img/icon-logo-shop.svg" width="154" height="64" alt="Логотип">
             </div>
             <nav class="main-navigation">
-              <ul>
+              <ul class="main-menu">
                 <li>
-                  <a href="#">Каталог</a>
+                  <a class="main-menu-item" href="#">Каталог</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <p>Новинки</p>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Сливочное</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Щербеты</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="#">Меролин</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Доставка и оплата</a>
+                  <a class="main-menu-item" href="#">Доставка и оплата</a>
                 </li>
                 <li>
-                  <a href="#">О компании</a>
+                  <a class="main-menu-item" href="#">О компании</a>
                 </li>
               </ul>
             </nav>
             <div class="user-block">
-              <a class="search" href="#"></a>
-              <a class="enter" href="#">Вход</a>
+              <div class="user-block-search">
+                <a class="search" href="#"></a>
+                <div class="form-search"> 
+                  <form action="#" method="get">        
+                    <input id="search" type="text" name="search" placeholder="Что ищем?" required>
+                    <label for="search">Что ищем?</label>
+                  </form> 
+                </div>
+              </div>
+              <div class="user-block-enter">
+                <a class="enter" href="#">Вход</a>
+                <div class="form-enter">
+                  <form action="#" method="get">
+                    <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
+                    <label for="mail">Электронная почта</label>
+                    <input id="password" type="text" name="password" placeholder="Пароль" required>
+                    <label for="password">Пароль</label>
+                    <a class="btn enter-btn" href="#">Войти</a>
+                  </form>
+                  <div class="enter-link">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div> 
+                </div>
+              </div>
               <a class="cart empty" href="#">Пусто</a>
             </div>
           </div>
@@ -171,7 +211,8 @@
                 <div class="content-mail">
                   <p class="delivery-mail">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <form action="#" method="post">
-                    <input type="text" name="email" placeholder="Электронная почта">
+                    <input  id="email" type="text" name="email" placeholder="Электронная почта" required>
+                    <label for="email">Электронная почта</label>
                     <button class="btn btn-mail" type="submit">Отправить</button>
                   </form>
                 </div>
