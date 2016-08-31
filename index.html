@@ -274,5 +274,66 @@
         </footer>
       </div>
     </div>
+    <div class="modal-fixed-overlay">
+      <div class="modal-content">
+        <div class="modal-content-title clearfix">
+          <h4 class="modal-title">Мы обязательно вам ответим!</h4>
+          <button class="modal-content-close" type="button" title="Закрыть"></button>
+        </div>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <input id="name" class="modal-content-name" type="text" name="login" placeholder="Как вас зовут?" required>
+          <label for="name">Как вас зовут?</label>
+          <input id="modal-mail" class="modal-content-mail" type="text"  name="mail" placeholder="Ваша почта для ответа?" required>
+          <label for="modal-mail">Ваша почта для ответа?</label>
+          <textarea id="text-field" class="modal-text-field" placeholder="Напишите что-нибудь..." required></textarea>
+          <label for="text-field" class="modal-text-title">Напишите что-нибудь...</label>
+          <button class="btn modal-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script>
+     var link = document.querySelector(".btn-map");
+     var popup = document.querySelector(".modal-fixed-overlay");
+     var close = popup.querySelector(".modal-content-close");
+     var form = popup.querySelector("form");
+     var login = popup.querySelector("[name=login]");
+     var password = popup.querySelector("[name=mail]");
+     var storage = localStorage.getItem("login");
+     link.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.add("modal-content-show");
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+      });
+
+     close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+     form.addEventListener("submit", function(event) {
+        if (!login.value || !mail.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+           } else {
+          localStorage.setItem("login", login.value);
+        } 
+      });
+     window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
