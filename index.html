@@ -5,7 +5,7 @@
     <title>Магазин "Глейси"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -27,7 +27,7 @@
                       <p>Новинки</p>
                     </li>
                     <li class="sub-menu-item">
-                      <a href="#">Сливочное</a>
+                      <a href="catalog.html">Сливочное</a>
                     </li>
                     <li class="sub-menu-item">
                       <a href="#">Щербеты</a>
@@ -64,7 +64,7 @@
                 <form action="#" method="get">
                   <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
                   <label for="mail">Электронная почта</label>
-                  <input id="password" type="text" name="password" placeholder="Пароль" required>
+                  <input id="password" type="password" name="password" placeholder="Пароль" required>
                   <label for="password">Пароль</label>
                   <a class="btn enter-btn" href="#">Войти</a>
                 </form>
@@ -215,7 +215,7 @@
                   <a href="#">10  способов сервировки фруктовых щербетов <br>к столу</a>
                 </div>
               </div>
-              <div class="information mail">
+              <div class="mail">
                 <div class="content-mail">
                   <p class="delivery-mail">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <form action="#" method="post">
@@ -227,62 +227,61 @@
               </div>
             </section>
           </div>
-          </main>
-        </div>
+        </main>
       </div>
-          <section class="map">
-            <div class="container clearfix">
-              <div class="map-contacts">
-                <p class="map-contacts-addres">
+    </div>
+    <section class="map">
+      <div class="container clearfix">
+        <div class="map-contacts">
+          <p class="map-contacts-addres">
                   Адрес главного офиса и<br> 
                   офлайн магазина:<br>
-                <span>ул. Большая Конюшенная<br> 
+          <span>ул. Большая Конюшенная<br> 
                   19/8, Санкт-Петербург</span>
-                </p>
-                <p class="map-contacts-phone">
+          </p>
+          <p class="map-contacts-phone">
                   Для заказов по телефону:<br>
-                <span>8 812 450-25-25</span><br>
+          <span>8 812 450-25-25</span><br>
                   (c 10 до 20 ежедневно)
-                </p>
-                <div class="map-contacts-btn">
-                  <a class="btn btn-map" href="#">Форма обратной связи</a>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-        <footer class="main-footer">
-          <div class="container clearfix">
-            <section class="footer-social">
-              <div class="social-btn">
-               <a class=" social-btn-tw" href="#">Твиттер</a>
-              </div>
-              <div class="social-btn">
-                <a class="social-btn-inst" href="#">Инстаграм</a>
-              </div>
-              <div class="social-btn">
-                <a class="social-btn-fb" href="#">Фейсбук</a>
-              </div>
-              <div class="social-btn">
-                <a class="social-btn-vk" href="#">Вконтакте</a>
-              </div>
-            </section>
-            <section class="footer-about-us">
-              <div class="about-us-prod">
-                <a href="#">Для поставщиков</a>
-                <a href="#">О производстве</a>
-              </div>
-              <div class="about-us-doc">
-                <a href="#">Наши документы</a>
-                <a href="#">Экологические стандарты</a>
-              </div>
-            </section>
-            <section class="footer-copyright">
-              <img src="img/logo-htmla.svg" width="108" height="38" alt="Логотип академии">
-              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
-            </section>
+          </p>
+          <div class="map-contacts-btn">
+            <a class="btn btn-map" href="#">Форма обратной связи</a>
           </div>
-        </footer>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-social">
+          <div class="social-btn">
+            <a class=" social-btn-tw" href="#">Твиттер</a>
+          </div>
+          <div class="social-btn">
+             <a class="social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="social-btn">
+            <a class="social-btn-fb" href="#">Фейсбук</a>
+          </div>
+          <div class="social-btn">
+            <a class="social-btn-vk" href="#">Вконтакте</a>
+          </div>
+        </section>
+        <section class="footer-about-us">
+          <div class="about-us-prod">
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </div>
+          <div class="about-us-doc">
+            <a href="#">Наши документы</a>
+            <a href="#">Экологические стандарты</a>
+          </div>
+        </section>
+        <section class="footer-copyright">
+          <img src="img/logo-htmla.svg" width="108" height="38" alt="Логотип академии">
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+        </section>
+      </div>
+    </footer>
     <div class="modal-fixed-overlay">
       <div class="modal-content">
         <div class="modal-content-title clearfix">
@@ -300,49 +299,7 @@
         </form>
       </div>
     </div>
-    <script>
-     var link = document.querySelector(".btn-map");
-     var popup = document.querySelector(".modal-fixed-overlay");
-     var close = popup.querySelector(".modal-content-close");
-     var form = popup.querySelector("form");
-     var login = popup.querySelector("[name=login]");
-     var password = popup.querySelector("[name=mail]");
-     var storage = localStorage.getItem("login");
-     link.addEventListener("click", function(event) {
-       event.preventDefault();
-       popup.classList.add("modal-content-show");
-        if (storage) {
-          login.value = storage;
-          password.focus();
-        } else {
-          login.focus();
-        }
-      });
-
-     close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
-      });
-
-     form.addEventListener("submit", function(event) {
-        if (!login.value || !mail.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-           } else {
-          localStorage.setItem("login", login.value);
-        } 
-      });
-     window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
+    <script src="js/script.js">
     </script>
   </body>
 </html>

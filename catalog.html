@@ -5,12 +5,12 @@
     <title>Магазин "Глейси"</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <a class="index-logo" href="#">
+        <a class="index-logo" href="index.html">
           <img class="logo" src="img/icon-logo-shop.svg" width="154" height="64" alt="Логотип">
         </a>
         <nav class="main-navigation">
@@ -59,7 +59,7 @@
             <form action="#" method="get">
               <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
               <label for="mail">Электронная почта</label>
-              <input id="password" type="text" name="password" placeholder="Пароль" required>
+              <input id="password" type="password" name="password" placeholder="Пароль" required>
               <label for="password">Пароль</label>
               <a class="btn enter-btn" href="#">Войти</a>
             </form>
@@ -106,7 +106,7 @@
         <div class="main-pathway">
           <ul class="breadcrumbs">
           <li>
-            <a class="breadcrumbs-item" href="#">Главная</a> 
+            <a class="breadcrumbs-item" href="index.html">Главная</a> 
           </li>
           <li>
             <a class="breadcrumbs-item" href="#">Каталог</a> 
@@ -115,7 +115,7 @@
             Сливочное  
           </li>
         </ul>
-        <h2>Сливочное мороженое</h2>
+        <h2 class="catalog-main-title">Сливочное мороженое</h2>
         </div>
       </div>
       <form class="filter clearfix" action="#" method="get">

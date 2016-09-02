@@ -7,13 +7,6 @@ body {
 	font-weight: 700;
 	font-family: "Roboto", "Arial", sans-serif;
   background-color: #849d8f;
-  /*background-color: #86a092;*/
-  /*Для главной страницы*/
-  /* background: #ffffff url("../img/gllacy-index-1200.jpg") no-repeat 50% 0px; */
-  /* background-size: 1200px auto; */
-  /*Для страницы каталога*/
-  /*background: #ffffff url("../img/gllacy-catalog-1200.jpg") no-repeat 50% 0px;*/
-  /*background-size: 1200px auto;*/
 }
 
 body > input[type="radio"] {
@@ -89,8 +82,9 @@ body > input[type="radio"] {
 }
 
 .sub-menu p, .sub-menu a {
-  display: inline-block;
+  display: inline-block; 
   position: relative;
+  vertical-align: top;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -132,16 +126,16 @@ body > input[type="radio"] {
 }
 
 .opened .sub-menu {
-    display: block;
+  display: block;
 }
 
 .opened .sub-menu {
-    display: block;
+  display: block;
 }
 
 .opened .sub-menu > a {
-    background-color: #d07058;
-    color: #ffffff;
+  background-color: #d07058;
+  color: #ffffff;
 }
 
 .main-menu-item:hover,
@@ -172,7 +166,6 @@ body > input[type="radio"] {
   z-index: 10;
 }
 
-
 .user-block {
   position: relative;
   float: right;
@@ -184,6 +177,7 @@ body > input[type="radio"] {
 
 .user-block-search {
   display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 
@@ -227,24 +221,28 @@ body > input[type="radio"] {
 }
 
 input[type="text"]:hover,
+input[type="password"]:hover,
 textarea:hover {
   padding: 8px 13px;
   border: 2px solid #c7c6c5;
 }
 
 input[type="text"]:focus,
+input[type="password"]:focus,
 textarea:focus {
   padding: 8px 13px;
   border: 2px solid #5b9ddf;
 }
 
 input[type="text"]:focus + label,
+input[type="password"]:focus + label,
 textarea:focus + label {
   display: block;
   color: #5b9ddf;
 }
 
 input[type="text"]:valid + label,
+input[type="password"]:valid + label,
 textarea:valid + label {
   display: block;
   color: #999999;
@@ -297,6 +295,7 @@ textarea:valid + label {
 .user-block-enter {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .form-enter {
@@ -314,16 +313,18 @@ textarea:valid + label {
 
 .form-enter input {
   position: relative;
+  vertical-align: middle;
   width: 220px;
   padding: 9px 14px;
   margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
   color: #999999;
   border-radius: 5px;
   border: 1px solid #c7c6c5;
   outline: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif; 
 }
 
 .form-enter label{
@@ -342,24 +343,21 @@ textarea:valid + label {
 }
 
 .form-enter .enter-btn {
-  display: inline-block;
-  float: left;
-  margin-left: 0;
+  position: relative;
+  float: left; 
+  margin: 0;
   padding: 10px 25px;
-  margin-right: 20px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .form-enter .enter-link {
-  display: inline-block;
-  position: absolute;
+  position: relative;
+  float: right;
+  text-align: left;
   width: 120px;
   min-height: 44px;
-  top: 147px;
-  left: 140px;
-
 }
 
 .enter-link a {
@@ -370,6 +368,11 @@ textarea:valid + label {
   font-weight: 400;
   color: #323232;
   text-decoration: underline;
+}
+
+.enter-link a:hover,
+.enter-link a:active {
+  color: #ffbc9e;
 }
 
 .enter:hover {
@@ -385,6 +388,7 @@ textarea:valid + label {
 .user-block-cart {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .cart {
@@ -535,6 +539,7 @@ td {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .site-wrapper {
@@ -687,8 +692,10 @@ td {
 
 .information {
   float: left;
-  width: 560px;
-  min-height: 229px;
+  width: 520px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 22px;
   margin-right: 26px;
   border-radius: 15px;
 }
@@ -698,19 +705,17 @@ td {
 }
 
 .offer-raspberries {
-  background: #ffffff url("../img/bg-raspberry.jpg") no-repeat 50% 0px;
+  background: #c24f70 url("../img/bg-raspberry.jpg") no-repeat 50% 0px;
   background-size: cover;
 }
 
 .offer-chocolate {
-  background: #ffffff url("../img/bg-chocolate.jpg") no-repeat 50% 0px;
+  background: #774f3a url("../img/bg-chocolate.jpg") no-repeat 50% 0px;
   background-size: cover;
 }
 
 .offer-title {
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 17px;
   margin-bottom: 15px;
   font-size: 35px;
@@ -720,7 +725,6 @@ td {
 }
 
 .offer-describe {
-  padding: 0 20px;
   margin: 0px;
   margin-bottom: 45px;
   font-size: 18px;
@@ -767,7 +771,6 @@ td {
 
 .offer-get {
   float: right;
-  margin-right: 20px; 
   margin-bottom: 24px;
 }
 
@@ -847,7 +850,7 @@ td {
   left: 0px;
   width: 61px;
   height: 61px;
-  background: url("../img/hit.png") no-repeat;
+  background: transparent url("../img/hit.png") no-repeat;
 }
 
 .product:nth-child(4n) {
@@ -862,6 +865,8 @@ td {
 
 .product-price {
   position: absolute;
+  width: 267px;
+  min-height: 45px;
   bottom: 8px;
   z-index: 20;
 }
@@ -906,7 +911,7 @@ td {
   padding-bottom: 23px;
   margin-bottom: 40px;
   font-size: 0px;
-  background: #f8f5f2 url("../img/pattern-wafer.jpg");
+  background: #ede1c5 url("../img/pattern-wafer.jpg");
   border-radius: 15px;
 }
 
@@ -988,9 +993,10 @@ td {
   margin-bottom: 40px;
 }
 
-.blog, .mail {
+.blog {
   float: left;
-  width: 560px;
+  width: 520px;
+  padding: 0 20px;
   min-height: 220px;
   margin-right: 26px;
   border-radius: 15px;
@@ -1005,7 +1011,6 @@ td {
 
 .blog-new {
   margin-top: 23px;
-  margin-left: 21px;
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
@@ -1015,7 +1020,6 @@ td {
 
 .blog-news {
   width: 285px;
-  margin-left: 20px;
 }
 
 .blog-news a {
@@ -1034,21 +1038,28 @@ td {
   background: repeating-linear-gradient(-45deg,#f8f7f4,#f8f7f4 10px,#92cdff 10px,#92cdff 20px,#f8f7f4 20px,#f8f7f4 30px,#fe9e90 30px,#fe9e90 40px);
 }
 
+.mail {
+  float: left;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
+}
+
 .content-mail {
-  position: relative;
+  position: relative; 
   margin: 5px;
-  width: 550px;
+  width: 510px;
   min-height: 175px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 35px;
   border-radius: 10px;
   background-color: #f8f7f4;
 }
 
 .content-mail input {
-  position: relative;
   width: 340px;
   padding: 9px 14px;
-  margin-left: 20px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -1063,7 +1074,7 @@ td {
 .content-mail label {
   position: absolute;
   display: none;
-  top: 117px;
+  top: 115px;
   left: 35px;
   font-size: 11px;
   line-height: 13px;
@@ -1073,13 +1084,12 @@ td {
 
 .btn-mail {
   float: right;
-  margin-right: 21px;
   padding: 10px 18px 10px 18px;
 }
 
 .delivery-mail {
-  position: relative;
-  margin: 0 20px 35px 20px;
+  margin: 0;
+  margin-bottom: 35px;
   padding-top: 29px;
   font-size: 16px;
   font-weight: 400;
@@ -1114,6 +1124,7 @@ td {
 
 .map-contacts span {
   display: inline-block;
+  vertical-align: top;
   margin: 3px 0;
   font-size: 18px;
   line-height: 24px;
@@ -1290,6 +1301,13 @@ td {
 .footer-copyright a:hover,
 .footer-copyright a:active {
   color: #ffbc9e;
+}
+
+.catalog-main-title {
+  margin: 0px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
 }
 
 .main-information {
@@ -1764,6 +1782,7 @@ input[type="checkbox"]:checked:disabled + label:hover::before {
 .modal-content {
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   top: 50%;
   left: 50%;
   width: 428px;
@@ -1788,14 +1807,13 @@ input[type="checkbox"]:checked:disabled + label:hover::before {
 }
 
 .modal-content-title {
-  /*opacity: 0.5;*/
   position: relative;
-  /*background-color: blue;*/
 }
 
 .modal-title {
   float: left;
   display: inline-block;
+  vertical-align: top;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
@@ -1806,6 +1824,7 @@ input[type="checkbox"]:checked:disabled + label:hover::before {
 .modal-content-close {
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   top: 15px;
   right: 0;
   width: 21px;
@@ -1888,27 +1907,12 @@ form label:nth-child(4) {
 
 .modal-btn {
   position: relative;
-  display: inline-block;
   float: right;
   margin-bottom: 25px;
   padding: 10px 24px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-}
-
-h2 {
-  margin: 0px;
-	font-size: 35px;
-	line-height: 41px;
-	font-weight: bold;
-}
-
-h3 {
-  margin: 0px;
-	font-size: 24px;
-	line-height: 30px;
-	color: #323232;
 }
 
 .sprite {
