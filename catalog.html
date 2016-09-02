@@ -47,9 +47,11 @@
           <div class="user-block-search">
             <a class="search" href="#"></a>
             <div class="form-search"> 
-              <form action="#" method="get">        
-                <input id="search" type="text" name="search" placeholder="Что ищем?" required>
-                <label for="search">Что ищем?</label>
+              <form action="#" method="get">
+                <div class="form-search-field">          
+                  <input id="search" type="text" name="search" required>
+                  <label for="search">Что ищем?</label>
+                </div>
               </form> 
             </div>
           </div>
@@ -57,10 +59,14 @@
             <a class="enter" href="#">Вход</a>
             <div class="form-enter">
             <form action="#" method="get">
-              <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
-              <label for="mail">Электронная почта</label>
-              <input id="password" type="password" name="password" placeholder="Пароль" required>
-              <label for="password">Пароль</label>
+              <div class="form-enter-field">
+                <input id="mail" type="text" name="mail" required>
+                <label for="mail">Электронная почта</label>
+              </div>
+              <div class="form-enter-field">
+                <input id="password" type="password" name="password" required>
+                <label for="password">Пароль</label>
+              </div>
               <a class="btn enter-btn" href="#">Войти</a>
             </form>
             <div class="enter-link">

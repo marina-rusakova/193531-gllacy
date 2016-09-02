@@ -52,9 +52,11 @@
               <div class="user-block-search">
                 <a class="search" href="#"></a>
                 <div class="form-search"> 
-                  <form action="#" method="get">        
-                    <input id="search" type="text" name="search" placeholder="Что ищем?" required>
-                    <label for="search">Что ищем?</label>
+                  <form action="#" method="get"> 
+                    <div class="form-search-field">      
+                      <input id="search" type="text" name="search" required>
+                      <label for="search">Что ищем?</label>
+                    </div>
                   </form> 
                 </div>
               </div>
@@ -62,10 +64,14 @@
                 <a class="enter" href="#">Вход</a>
                 <div class="form-enter">
                 <form action="#" method="get">
-                  <input id="mail" type="text" name="mail" placeholder="Электронная почта" required>
-                  <label for="mail">Электронная почта</label>
-                  <input id="password" type="password" name="password" placeholder="Пароль" required>
-                  <label for="password">Пароль</label>
+                  <div class="form-enter-field">
+                    <input id="mail" type="text" name="mail"  required>
+                    <label for="mail">Электронная почта</label>
+                  </div>
+                  <div class="form-enter-field">
+                    <input id="password" type="password" name="password" required>
+                    <label for="password">Пароль</label>
+                  </div>
                   <a class="btn enter-btn" href="#">Войти</a>
                 </form>
                 <div class="enter-link">
@@ -219,8 +225,10 @@
                 <div class="content-mail">
                   <p class="delivery-mail">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                   <form action="#" method="post">
-                    <input id="email" type="text" name="email" placeholder="Электронная почта" required>
-                    <label for="email">Электронная почта</label>
+                    <div class="content-mail-field">
+                      <input id="email" type="text" name="email" required>
+                      <label for="email">Электронная почта</label>
+                    </div>
                     <button class="btn btn-mail" type="submit">Отправить</button>
                   </form>
                 </div>
@@ -234,15 +242,15 @@
       <div class="container clearfix">
         <div class="map-contacts">
           <p class="map-contacts-addres">
-                  Адрес главного офиса и<br> 
-                  офлайн магазина:<br>
-          <span>ул. Большая Конюшенная<br> 
-                  19/8, Санкт-Петербург</span>
+            Адрес главного офиса и<br> 
+            офлайн магазина:<br>
+            <span>ул. Большая Конюшенная<br> 
+            19/8, Санкт-Петербург</span>
           </p>
           <p class="map-contacts-phone">
-                  Для заказов по телефону:<br>
-          <span>8 812 450-25-25</span><br>
-                  (c 10 до 20 ежедневно)
+            Для заказов по телефону:<br>
+            <span>8 812 450-25-25</span><br>
+            (c 10 до 20 ежедневно)
           </p>
           <div class="map-contacts-btn">
             <a class="btn btn-map" href="#">Форма обратной связи</a>
@@ -289,17 +297,23 @@
           <button class="modal-content-close" type="button" title="Закрыть"></button>
         </div>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <input id="name" class="modal-content-name" type="text" name="login" placeholder="Как вас зовут?" required>
-          <label for="name">Как вас зовут?</label>
-          <input id="modal-mail" class="modal-content-mail" type="text"  name="mail" placeholder="Ваша почта для ответа?" required>
-          <label for="modal-mail">Ваша почта для ответа?</label>
-          <textarea id="text-field" class="modal-text-field" placeholder="Напишите что-нибудь..." required></textarea>
-          <label for="text-field" class="modal-text-title">Напишите что-нибудь...</label>
+          <div class="modal-field">
+            <input id="name" class="modal-content-name" type="text" name="login" required>
+            <label for="name">Как вас зовут?</label>
+          </div>
+          <div class="modal-field">
+            <input id="modal-mail" class="modal-content-mail" type="text"  name="mail" required>
+            <label for="modal-mail">Ваша почта для ответа?</label>
+          </div>
+          <div class="modal-comment">
+            <textarea id="text-field" class="modal-text-field" required></textarea>
+            <label for="text-field">Напишите что-нибудь...</label>
+          </div>
           <button class="btn modal-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-    <script src="js/script.js">
+    <script src="js/script.min.js">
     </script>
   </body>
 </html>
